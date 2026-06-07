@@ -68,11 +68,11 @@ re.findall(pttn, str)
 
 ![](https://raw.githubusercontent.com/selfteaching/the-craft-of-selfteaching/master/images/regex-test.gif?raw=true)
 
-Python 的项目代码仓库里有一个很简短的 Demo 程序，叫 [`redemo.py`](https://github.com/python/cpython/blob/master/Tools/demo/redemo.py)，它使用 [Tcl/Tk](https://docs.python.org/3/library/tkinter.html) 作为图形界面，也可以用来测试正则表达式。
+Python 的项目代码仓库里有一个很简短的 Demo 程序，叫 [`redemo.py`](https://github.com/python/cpython/blob/3.6/Tools/demo/redemo.py)，它使用 [Tcl/Tk](https://docs.python.org/3/library/tkinter.html) 作为图形界面，也可以用来测试正则表达式。
 
 它的代码地址是：
 
-> https://raw.githubusercontent.com/python/cpython/master/Tools/demo/redemo.py
+> https://raw.githubusercontent.com/python/cpython/3.6/Tools/demo/redemo.py
 
 它运行起来长成这样：
 
@@ -243,7 +243,7 @@ re.findall(pttn, str)
 > * `w` 是 word characters
 > * `s` 是 spaces
 
-另外，在空白的集合 `[ \f\n\r\t\v]` 中：`f` 是分页符；`\n` `\r` 是换行符；`\t` 是制表符；`\v` 是纵向制表符（很少用到）。各种关于空白的转义符也同样挺好记忆的，如果你知道各个字母是那个词的首字母的话：
+另外，在空白的集合 `[ \f\n\r\t\v]` 中：`\f` 是分页符；`\n` `\r` 是换行符；`\t` 是制表符；`\v` 是纵向制表符（很少用到）。各种关于空白的转义符也同样挺好记忆的，如果你知道各个字母是那个词的首字母的话：
 
 > * `f` 是 flip
 > * `n` 是 new line
@@ -431,7 +431,7 @@ re.findall(pttn, str)
 
 在集合原子中（即，`[]` 内的原子）各个原子之间的关系，只有 “或” —— 相当于方括号中的每个原子之间都有一个被省略的 `|`。
 
-**注意**：中括号的 `|` 不被当作特殊符号，而是被当作 `|` 这个符号本身。在中括号中的圆括号，也被当作圆括号 `()` 本身，而无分组含义。
+**注意**：方括号的 `|` 不被当作特殊符号，而是被当作 `|` 这个符号本身。在方括号中的圆括号，也被当作圆括号 `()` 本身，而无分组含义。
 
 ```python
 from IPython.core.interactiveshell import InteractiveShell
